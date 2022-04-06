@@ -3,41 +3,27 @@ html {
     margin: 0;
     height: 100vh;
 }
-.gameboard {
-    height: 0vh;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 5px;
-}
-.gameboard > * {
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(3, 1fr); */ 
-    width: 50%;
-    justify-content: space-evenly;
-    height: 100%;
-
-}
-.gameboard > * > * {
-    display: grid;
-    place-items: center;
-}
 .scoreboard {
-    display: flex;
-    justify-content: space-around;
     height: 25vh;
 }
-.top > *, 
-.middle > *,
-.bottom > *{
+.gameboard {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    gap: 5px;
+}
+.squares {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    gap: 10px;
+}
+.box {
+    display: grid;
+    place-items: center;
     height: 200px;
     width: 200px;
+    background-color: green;
     font-size: 10rem;
-    border: 1px solid black;
-}
-
-.player-turn {
-    content: '';
 }
