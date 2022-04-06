@@ -8,6 +8,7 @@ const Game = (() => {
     // gameBoard()
     // updateDisplay()
 
+    let winningCombo = [1, 2, 3];
 
     // create player factory function to generate new players
     const Player = (name, marker) => {
