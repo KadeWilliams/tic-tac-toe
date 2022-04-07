@@ -2,28 +2,60 @@ html {
     box-sizing: border-box;
     margin: 0;
     height: 100vh;
+    font-family: "Syne", sans-serif;
+}
+.title {
+    font-weight: bold;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
 }
 .scoreboard {
-    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: 5%;
+    height: 8vh;
+    width: 90%;
+    font-size: 3rem;
+}
+.playAgain-parent {
+    display: flex;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+.playAgain {
+    height: 30px;
+    width: 100px;
+    display: none;
 }
 .gameboard {
-    height: 50vh;
+    height: 60vh;
     display: grid;
     place-items: center;
     gap: 5px;
+
 }
 .squares {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
-    background-color: white;
     gap: 10px;
+    background-color: black;
 }
 .box {
     display: grid;
     place-items: center;
-    height: 200px;
-    width: 200px;
-    background-color: green;
-    font-size: 10rem;
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    font-size: 12rem;
+    color: rgb(0, 0, 0);
+}
+.box:hover {
+    background-color: rgb(207, 207, 207);
+}
+.avoid-clicks {
+    pointer-events: none;
 }

@@ -8,13 +8,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Syne:wght@400;600;800&display=swap');
+    </style>
 </head>
 
 <body>
+    <div class="title">Tic-Tac-Toe</div>
     <div class="scoreboard">
-        <div class="left">Player 1: 0</div>
-        <div class="player-turn"></div>
-        <div class="right">Player 2: 1</div>
+        <div class="playerOne">Player 1: <span class="scoreO"></span></div>
+        <div class="message"></div>
+        <div class="playerTwo">Player 2: <span class="scoreX"></span></div>
+    </div>
+    <div class="playAgain-parent">
+        <button class="playAgain">Play Again</button>
     </div>
     <div class="gameboard">
         <div class="squares"></div>
